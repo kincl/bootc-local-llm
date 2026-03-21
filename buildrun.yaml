@@ -1,0 +1,8 @@
+apiVersion: shipwright.io/v1beta1
+kind: BuildRun
+metadata:
+  generateName: bootc-local-llm-
+  namespace: bootc
+spec:
+  build:
+    name: bootc-local-llm
