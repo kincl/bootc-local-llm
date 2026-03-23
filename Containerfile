@@ -2,7 +2,7 @@ FROM quay.io/fedora/fedora-bootc:43
 
 RUN <<EOF
 # base rpms
-dnf install -y tcpdump pciutils man vim-enhanced btop tuned \
+dnf install -y tcpdump pciutils man vim-enhanced btop tuned tmux \
     cockpit cockpit-ws cockpit-files cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-system
 dnf remove -y avahi
 
