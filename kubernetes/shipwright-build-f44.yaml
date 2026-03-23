@@ -1,0 +1,18 @@
+apiVersion: shipwright.io/v1beta1
+kind: Build
+metadata:
+  name: bootc-local-llm-f44
+  namespace: bootc
+spec:
+  source:
+    type: Git
+    git:
+      url: https://github.com/kincl/bootc-local-llm.git
+  strategy:
+    name: buildah-high-performance
+    kind: ClusterBuildStrategy
+  paramValues:
+    - name: dockerfile
+      value: Containerfile.f44
+  output:
+    image: image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:f44
