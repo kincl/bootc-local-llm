@@ -1,4 +1,5 @@
 resources:
+  - role.yaml
   - rolebinding.yaml
   - shipwright-build.yaml
   - shipwright-buildah-high-performance.yaml

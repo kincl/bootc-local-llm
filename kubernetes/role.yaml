@@ -1,0 +1,28 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: image-puller
+  namespace: bootc
+rules:
+  - apiGroups:
+      - ""
+      - image.openshift.io
+    resources:
+      - imagestreams/layers
+    verbs:
+      - get
+  - apiGroups:
+      - ""
+      - image.openshift.io
+    resources:
+      - imagestreams
+      - imagestreamtags
+    verbs:
+      - get
+  - apiGroups:
+      - ""
+      - image.openshift.io
+    resources:
+      - images
+    verbs:
+      - get
