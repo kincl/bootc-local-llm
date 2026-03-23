@@ -1,0 +1,17 @@
+apiVersion: image.openshift.io/v1
+kind: ImageStream
+metadata:
+  name: fedora-bootc
+  namespace: bootc
+spec:
+  lookupPolicy:
+    local: false
+  tags:
+    - name: "44"
+      from:
+        kind: DockerImage
+        name: quay.io/fedora/fedora-bootc:44
+    - name: "43"
+      from:
+        kind: DockerImage
+        name: quay.io/fedora/fedora-bootc:43

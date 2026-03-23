@@ -1,4 +1,4 @@
-FROM quay.io/fedora/fedora-bootc:43
+FROM image-registry.openshift-image-registry.svc:5000/bootc/fedora-bootc:43
 
 RUN <<EOF
 # base rpms

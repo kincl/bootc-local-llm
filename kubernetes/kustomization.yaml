@@ -3,3 +3,4 @@ resources:
   - rolebinding.yaml
   - shipwright-build.yaml
   - shipwright-buildah-high-performance.yaml
+  - imagestream.yaml
