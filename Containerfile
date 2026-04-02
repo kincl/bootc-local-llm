@@ -7,7 +7,7 @@ dnf install -y tcpdump pciutils man vim-enhanced btop tuned tmux \
 dnf remove -y avahi
 
 # AMD
-dnf install -y amdsmi rocm-smi rocminfo
+dnf install -y amdsmi rocm-smi rocminfo radeontop
 
 # AI
 dnf install -y toolbox podman podlet ramalama python3-huggingface-hub
