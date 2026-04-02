@@ -1,6 +1,8 @@
 FROM image-registry.openshift-image-registry.svc:5000/bootc/fedora-bootc:43
 
 RUN <<EOF
+set -euo pipefail
+
 # base rpms
 dnf install -y tcpdump pciutils man vim-enhanced btop tuned tmux \
     cockpit cockpit-ws cockpit-files cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-system
