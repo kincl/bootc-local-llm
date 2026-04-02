@@ -2,6 +2,7 @@ FROM image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:late
 
 RUN <<EOF
 dnf -y copr enable @kernel-vanilla/mainline-wo-mergew
+dnf -y install 'dnf5-command(copr)'
 dnf -y upgrade 'kernel*'
 
 dnf clean all
