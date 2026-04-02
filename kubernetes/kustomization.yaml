@@ -4,3 +4,6 @@ resources:
   - shipwright-build.yaml
   - shipwright-buildah-high-performance.yaml
   - imagestream.yaml
+
+  - shipwright-build-mainline-kernel.yaml
+  - shipwright-build-f44.yaml

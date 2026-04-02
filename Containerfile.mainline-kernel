@@ -1,0 +1,10 @@
+FROM image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:latest
+
+RUN <<EOF
+dnf -y copr enable @kernel-vanilla/mainline-wo-mergew
+dnf -y upgrade 'kernel*'
+
+dnf clean all
+EOF
+
+RUN bootc container lint

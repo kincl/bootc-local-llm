@@ -1,7 +1,7 @@
 apiVersion: shipwright.io/v1beta1
 kind: Build
 metadata:
-  name: bootc-local-llm
+  name: bootc-local-llm-f44
   namespace: bootc
 spec:
   source:
@@ -13,6 +13,6 @@ spec:
     kind: ClusterBuildStrategy
   paramValues:
     - name: dockerfile
-      value: Containerfile
+      value: Containerfile.f44
   output:
-    image: image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:latest
+    image: image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:f44
