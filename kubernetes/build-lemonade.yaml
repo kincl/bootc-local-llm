@@ -1,0 +1,19 @@
+apiVersion: shipwright.io/v1beta1
+kind: Build
+metadata:
+  name: lemonade-server
+  namespace: bootc
+spec:
+  source:
+    type: Git
+    git:
+      url: https://github.com/kincl/lemonade.git
+      revision: v10.0.1-with-web-app-container
+  strategy:
+    name: buildah-high-performance
+    kind: ClusterBuildStrategy
+  paramValues:
+    - name: dockerfile
+      value: Dockerfile
+  output:
+    image: image-registry.openshift-image-registry.svc:5000/bootc/lemonade-server:latest
