@@ -4,7 +4,7 @@ RUN <<EOF
 set -euo pipefail
 
 # base rpms
-dnf install -y tcpdump pciutils man vim-enhanced btop tuned tmux \
+dnf install -y tcpdump pciutils man vim-enhanced btop tuned tmux git \
     cockpit cockpit-ws cockpit-files cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-system
 dnf remove -y avahi
 
@@ -13,6 +13,8 @@ dnf install -y amdsmi rocm-smi rocminfo radeontop
 
 # AI
 dnf install -y toolbox podman podlet ramalama python3-huggingface-hub
+
+dnf remove -y bluez
 
 dnf clean all
 rm -rf /var/log/dnf5.log*
