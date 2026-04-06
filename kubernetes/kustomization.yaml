@@ -9,3 +9,4 @@ resources:
   - build-f44.yaml
 
   - build-lemonade.yaml
+  - build-lemonade-upstream.yaml
