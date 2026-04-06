@@ -7,11 +7,19 @@ spec:
   lookupPolicy:
     local: false
   tags:
-    - name: "44"
-      from:
-        kind: DockerImage
-        name: quay.io/fedora/fedora-bootc:44
-    - name: "43"
-      from:
+    - from:
         kind: DockerImage
         name: quay.io/fedora/fedora-bootc:43
+      importPolicy:
+        importMode: Legacy
+      name: "43"
+      referencePolicy:
+        type: Source
+    - from:
+        kind: DockerImage
+        name: quay.io/fedora/fedora-bootc:44
+      importPolicy:
+        importMode: Legacy
+      name: "44"
+      referencePolicy:
+        type: Source
