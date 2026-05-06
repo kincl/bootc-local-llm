@@ -4,7 +4,6 @@ resources:
   - buildstrategy-buildah-high-performance.yaml
   - imagestream.yaml
 
-  - build-f43.yaml
   - build-f44.yaml
   - build-mainline-kernel.yaml
 

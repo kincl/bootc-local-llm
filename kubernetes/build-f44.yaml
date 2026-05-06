@@ -13,6 +13,6 @@ spec:
     kind: ClusterBuildStrategy
   paramValues:
     - name: dockerfile
-      value: Containerfile.f44
+      value: Containerfile
   output:
     image: image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:f44
