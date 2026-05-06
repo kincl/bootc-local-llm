@@ -7,8 +7,8 @@ spec:
   source:
     type: Git
     git:
-      url: https://github.com/kincl/lemonade.git
-      revision: v10.0.1-with-web-app-container
+      url: https://github.com/lemonade-sdk/lemonade.git
+      revision: main
   strategy:
     name: buildah-high-performance
     kind: ClusterBuildStrategy

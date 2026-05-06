@@ -1,12 +1,11 @@
 resources:
   - role.yaml
   - rolebinding.yaml
-  - build.yaml
   - buildstrategy-buildah-high-performance.yaml
   - imagestream.yaml
 
-  - build-mainline-kernel.yaml
+  - build-f43.yaml
   - build-f44.yaml
+  - build-mainline-kernel.yaml
 
   - build-lemonade.yaml
-  - build-lemonade-upstream.yaml
