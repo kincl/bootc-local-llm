@@ -1,4 +1,4 @@
-FROM image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:latest
+FROM image-registry.openshift-image-registry.svc:5000/bootc/bootc-local-llm:f44
 
 RUN <<EOF
 set -euo pipefail
