@@ -4,7 +4,7 @@ RUN <<EOF
 set -euo pipefail
 
 # base rpms
-dnf install -y tcpdump pciutils man vim-enhanced btop tuned tmux git libatomic \
+dnf install -y tcpdump pciutils man vim-enhanced btop tuned tmux git libatomic glibc-langpack-en \
     cockpit cockpit-ws cockpit-files cockpit-networkmanager cockpit-ostree cockpit-podman cockpit-system
 dnf remove -y avahi
 
